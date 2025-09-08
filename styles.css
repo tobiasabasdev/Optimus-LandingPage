@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  position: relative;
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/background.jpg");
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5)
+}
+
+.nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  max-width: 48px;
+}
+
+h1 {
+  color: #f5f5f5;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+    position: relative;
+    padding: 9px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 1.10rem;
+}
+
+h1:hover{
+     color: #cccccc;
+     cursor: pointer;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+nav ul li a:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    height: 2px;
+    transition: 0.9s;
+}
+
+.logo-container hr{
+    height: 30px;
+    border-style: none;
+    border: #e0dfdfec solid 1px;
+}
+
+.header-section{
+    display: flex;
+    position: relative;
+    left: 10%;
+    top: 20%;
+    align-items: start;
+    flex-direction: column;
+    animation: up 2s;
+}
+
+.header-section p{
+    padding: 10px;
+    font-size: 1.10rem;
+    color: white;
+    max-width: 400px;
+}
+
+.header-section hr{
+    width: 30px;
+    margin: 0;
+    border: white 1px solid;
+}
+
+.header-section div{
+    display: flex;
+    align-items: center;
+}
+
+.header-section h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.button-empezar{
+    background-color: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    border-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  position: relative;
+}
+
+.flecha svg {
+  transform: translate(5px, 0px);
+  transition: transform 0.9s;
+}
+
+.button-empezar:hover {
+  background-color: #cccccc;
+  transition: background-color 0.9s;
+  cursor: pointer;
+}
+
+.button-empezar:hover .flecha svg {
+  transform: rotate(-30deg);
+}
+
+@keyframes flechagira {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes up {
+  from{
+    opacity: 0%;
+    transform: translateY(-300px)
+  }
+  to{
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+
+  
+}
