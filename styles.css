@@ -8,7 +8,7 @@ body {
 
 header {
   position: relative;
-background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/background.jpg");
+background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/doctorbackground.webp");
   background-size: cover;
   background-size: cover;
   background-position: center;
@@ -78,7 +78,7 @@ nav ul li a:after {
     bottom: 0;
     background-color: white;
     height: 2px;
-    transition: 0.9s;
+    transition: 0.5s;
 }
 
 .logo-container hr{
@@ -149,6 +149,7 @@ nav ul li a:after {
 .flecha svg {
   transform: translate(5px, 0px);
   transition: transform 0.9s;
+  rotate: -30deg;
 }
 
 .button-empezar:hover {
@@ -158,15 +159,38 @@ nav ul li a:after {
 }
 
 .button-empezar:hover .flecha svg {
-  transform: rotate(-30deg);
+  transform: rotate(30deg);
 }
 
-@keyframes flechagira {
-  from {
-    transform: rotate(0deg);
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+  font-size: 48px;
+  color: goldenrod;
+}
+
+.reviews hr{
+  rotate: 90deg;
+}
+
+
+#star_shine{
+  color:white;
+  animation: gira 0.9s 2s forwards,
+  up 2s;
+}
+
+@keyframes gira {
+  from{
+    rotate: 0deg;
+    color: white!important; 
   }
-  to {
-    transform: rotate(-30deg);
+  to{
+    rotate: 360deg;
+    color: goldenrod;
   }
 }
 
@@ -181,4 +205,67 @@ nav ul li a:after {
   }
 
   
+  
+}
+
+main{
+  min-height: 100dvh;
+  width: 100%;        
+  max-width: 1200px; 
+  padding: 2rem;
+  box-sizing: border-box;
+  margin: 0 auto;    
+}
+
+.section-hero{
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+
+.section-hero p{
+  margin-left: auto;
+  max-width: 600px;
+  font-size: 1.25rem;
+}
+
+.section-hero img{
+  border-radius: 5%;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+.hr-separation {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.hr-item hr {
+  width: 200px;
+  height: 3px;
+  background-color: #cccccc;
+  border: none;
+  margin: 0 auto 10px; 
+}
+
+.hr-item h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.hr-item p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.section-clientes{
 }
