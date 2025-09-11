@@ -300,7 +300,7 @@ main{
 }
 
 .section-clientes {
-  height: 100vh;
+  height: 150vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -330,8 +330,8 @@ main{
   max-width: 600px;
 }
 
-.section-clientes .raul-review img {
-  grid-column: 1;
+.raulimg{
+   transform: scaleX(-1);
 }
 
 .section-clientes .raul-review h3 {
@@ -375,6 +375,22 @@ main{
       animation: progressGrow linear;
   animation-timeline: scroll(root);
   }
+
+  .section-clientes .raul-review h3{
+    animation: reveal 1s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+  }
+    .section-clientes .raul-review p {
+      animation: reveal 1s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+    }
+    .section-clientes.raul-review img{
+      animation: reveal 1s linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+    }
 }
 
 .section-clientes img {
@@ -398,3 +414,5 @@ main{
     scale: 1;
   }
 }
+
+
