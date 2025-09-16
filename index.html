@@ -20,6 +20,21 @@
         <hr>
       </div>
       <ul class="menu">
+        <li class="hideOnMobile"><a href="#">Coaching</a></li>
+        <li class="hideOnMobile" ><a href="#">Reseñas</a></li>
+        <li class="hideOnMobile" ><a href="#">Sobre nosotros</a></li>
+        <li class="hideOnMobile"  ><a href="#">Contacto</a></li>
+      </ul>
+
+       <div id="logoMobile" class="logo-container">
+        <img class="logo" src="img/optilogo.png" alt="logo optimus">
+        <h1>Optimus</h1>
+        <hr>
+      </div>
+      <span id="cerrador" onclick=showSidebar() class="material-symbols-outlined">menu</span>
+      <ul class="sidebar">
+       <li> <span onclick=hideSidebar() class="material-symbols-outlined">menu</span>
+        </li>
         <li><a href="#">Coaching</a></li>
         <li><a href="#">Reseñas</a></li>
         <li><a href="#">Sobre nosotros</a></li>
@@ -80,20 +95,35 @@
 </div>
 
 <section class="section-clientes">
-  <div class="ilia-review">
-    <h3>Ilia Topuria</h3>
-    <p>“El Doctor Aldo ha sido fundamental en mi carrera. Gracias a él llego a cada pelea en la mejor forma posible, no solo física, sino también mental. Confío en él al cien por cien porque sé que se preocupa por mi salud y mi rendimiento como nadie más.” — Ilia Topuria</p>
+  <div class="review-container">
+    <div class="ilia-review">
+      <h3>Ilia Topuria</h3>
+      <p>“El Doctor Aldo ha sido fundamental en mi carrera. Gracias a él llego a cada pelea en la mejor forma posible, no solo física, sino también mental. Confío en él al cien por cien porque sé que se preocupa por mi salud y mi rendimiento como nadie más.” — Ilia Topuria</p>
+    </div>
+    <img src="img/ilia.avif" alt="">
   </div>
-  <img src="img/ilia.avif" alt="">
- <div class="raul-review">
-    <h3>Raul Albiol</h3>
-    <p>"Quiero expresar mi más profundo agradecimiento al doctor Aldo. Después del accidente que sufrí, pasé por momentos de mucha incertidumbre y dificultad, pero gracias a su profesionalidad, paciencia y dedicación pude recuperarme y volver a sentirme fuerte. No solo me brindó un tratamiento médico de primer nivel, sino también la confianza y el apoyo necesarios para salir adelante. Siempre le estaré agradecido por haber estado a mi lado en un momento tan importante de mi vida.</p>
+  
+  <div class="review-container">
+    <div class="raul-review">
+      <h3>Raul Albiol</h3>
+      <p>"Quiero expresar mi más profundo agradecimiento al doctor Aldo. Después del accidente que sufrí, pasé por momentos de mucha incertidumbre y dificultad, pero gracias a su profesionalidad, paciencia y dedicación pude recuperarme y volver a sentirme fuerte. No solo me brindó un tratamiento médico de primer nivel, sino también la confianza y el apoyo necesarios para salir adelante. Siempre le estaré agradecido por haber estado a mi lado en un momento tan importante de mi vida.</p>
+    </div>
+    <img src="img/raul.jpg" alt="" class="raulimg">
   </div>
-  <img src="img/raul.jpg" alt="" class="raulimg">
 </section>
-
-
 </main>
+
+<footer>
+  <ul>
+    <li>Coaching</li>
+    <li>Reseñas</li>
+    <li>Sobre Nosotros</li>
+    <li>Contacto</li>
+  </ul>
+  <div class="redes">
+
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
