@@ -8,38 +8,37 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<title>Optimus</title>
+<title>Optimus | Doctor aldo el mejor</title>
 </head>
 <body>
 <div id="progress"></div>
   <header>
     <nav class="nav">
       <div class="logo-container">
-        <img class="logo" src="img/optilogo.png" alt="logo optimus">
+        <img class="logo" src="img/man.png" alt="logo optimus">
         <h1>Optimus</h1>
         <hr>
       </div>
       <ul class="menu">
-        <li class="hideOnMobile"><a href="#">Coaching</a></li>
-        <li class="hideOnMobile" ><a href="#">Reseñas</a></li>
-        <li class="hideOnMobile" ><a href="#">Sobre nosotros</a></li>
-        <li class="hideOnMobile"  ><a href="#">Contacto</a></li>
-      </ul>
+    <li class="hideOnMobile"><a href="#coaching">Coaching</a></li>
+    <li class="hideOnMobile"><a href="#sobrenosotros">Sobre nosotros</a></li>
+    <li class="hideOnMobile"><a href="#reseñas">Reseñas</a></li>
+    <li class="hideOnMobile"><a href="#contacto">Contacto</a></li>
+  </ul>
 
        <div id="logoMobile" class="logo-container">
-        <img class="logo" src="img/optilogo.png" alt="logo optimus">
+        <img class="logo" src="img/man.png" alt="logo optimus">
         <h1>Optimus</h1>
         <hr>
       </div>
       <span id="cerrador" onclick=showSidebar() class="material-symbols-outlined">menu</span>
-      <ul class="sidebar">
-       <li> <span onclick=hideSidebar() class="material-symbols-outlined">menu</span>
-        </li>
-        <li><a href="#">Coaching</a></li>
-        <li><a href="#">Reseñas</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+          <ul class="sidebar">
+      <li><span onclick="hideSidebar()" class="material-symbols-outlined">menu</span></li>
+      <li><a href="#coaching">Coaching</a></li>
+      <li><a href="#sobrenosotros">Sobre nosotros</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
     </nav>
 
     <section class="header-section">
@@ -49,11 +48,18 @@
       </div>
       <h2>Optimiza tus entrenamientos</h2>
       <p>Mejora tu rendimiento en cualquier disciplina con la guía del <strong>Doctor Aldo</strong>, un entrenador experimentado que crea planes de entrenamiento personalizados para cada nivel.</p>
-      <button class="button-empezar">Empezar
-        <div class="circulo">
-        <div class="flecha"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></div>
-  </button>
-        <div class="reviews">
+<button class="button-empezar">
+  Empezar
+  <span class="circulo">
+    <span class="flecha">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+        <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/>
+      </svg>
+    </span>
+  </span>
+</button>
+
+        <div id="Reseñas" class="reviews">
           <hr>
           <span class="material-symbols-outlined">star</span>
           <span class="material-symbols-outlined">star</span>
@@ -62,21 +68,23 @@
           <span id="star_shine" class="material-symbols-outlined">star_shine</span>
           <p>+100 Reseñas positivas</p>
         </div>
-      </div>
     
       
     </section>
   </header>
 
   <main>
-  <section class="section-hero">
+  <section id="coaching" class="section-hero">
     <div>
     <h2>Planes personalizados</h2>
     <p><strong>Desde principiantes hasta profesionales experimentados</strong>, el <strong>Doctor Aldo</strong> diseña planes únicos que te ayudarán a desbloquear todo tu potencial y alcanzar el éxito en las competencias.</p>
     </div>
     <img src="img/doctoraldo.webp" alt="Imagen del DoctorAldo">
   </section>
+  <section id="sobrenosotros" class="sobrenosotros">
+  <h3>Sobre nosotros</h3>
 <div class="hr-separation">
+  
   <div class="hr-item">
     <hr>
     <h3>15+</h3>
@@ -93,14 +101,14 @@
     <p>Proyectos destacados</p>
   </div>
 </div>
-
-<section class="section-clientes">
+</section>
+<section id="reseñas"   class="section-clientes">
   <div class="review-container">
     <div class="ilia-review">
       <h3>Ilia Topuria</h3>
       <p>“El Doctor Aldo ha sido fundamental en mi carrera. Gracias a él llego a cada pelea en la mejor forma posible, no solo física, sino también mental. Confío en él al cien por cien porque sé que se preocupa por mi salud y mi rendimiento como nadie más.” — Ilia Topuria</p>
     </div>
-    <img src="img/ilia.avif" alt="">
+    <img src="img/ilia.png" alt="">
   </div>
   
   <div class="review-container">
@@ -111,18 +119,55 @@
     <img src="img/raul.jpg" alt="" class="raulimg">
   </div>
 </section>
+
+<section id="contacto" class="formulario">
+    <h3>Contacte con nosotros</h3>
+  <form action="/my-handlingpagexd" method ="post">
+    <ul>
+      <li>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name" placeholder="Escribe tu nombre">
+      </li>
+      <li>
+        <label for="email">CorreoElectronico:</label>
+        <input type="text" id="email" name="user_mail" placeholder="Ejemplo@gmail.com">
+      </li>
+
+      <li>
+        <label for="msg">Mensaje:</label>
+        <input type="text" id="msg" name="user_message" placeholder="Escribe tu mensaje...">
+      </li>
+
+      <li class="button">
+        <button type="submit">Enviar</button>
+      </li>
+    </ul> 
+    </form>
+</section>
+
 </main>
 
 <footer>
-  <ul>
-    <li>Coaching</li>
-    <li>Reseñas</li>
-    <li>Sobre Nosotros</li>
-    <li>Contacto</li>
-  </ul>
   <div class="redes">
-
+    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+    <img src="img/facebook.png" alt="Facebook logo" title="Facebook">
+    </a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+       <img src="img/instagram.png" alt="Instagram Logo" title="Instagram">
+    </a>
+   <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+    <img src="img/tik-tok.png" alt="TikTok Logo" title="TikTok">
+    </a>
   </div>
+  <div class="aldo">
+    <img src="img/man.png" alt="LogoAldo" title="Optimus">
+  </div>
+  <ul>
+    <li>Avisos legales</li>
+    <li>Politica de privicidad</li>
+    <li>Politica de cookies</li>
+  </ul>
+  <p>@CopyRight 2025 Optimus</p>
 </footer>
 <script src="script.js"></script>
 </body>
