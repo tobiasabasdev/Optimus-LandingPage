@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const raulreview = document.querySelectorAll(".raul-review p");
   const formh3 = document.querySelector(".formulario h3");
   const nav = document.querySelector(".nav");
-  const coachingSection = document.querySelector("#sobrenosotros");
-
+  const coachingSection = document.querySelector("#footer");
+  const sectionhero = document.querySelector("#coaching");
+  const navspan = document.querySelector(".nav span")
   if (sectionClientes) {
     const observerClientes = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -33,7 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const observerCoaching = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          nav.style.backgroundColor = "black";
+          navspan.style.color = "white";
+          nav.style.backgroundColor = "#bda13d";
         } else {
           nav.style.backgroundColor = "";
         }
@@ -41,6 +43,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.3 });
 
     observerCoaching.observe(coachingSection);
+  }
+
+  if (sectionhero) {
+    const observerSectionHero = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navspan.style.color = "white";
+          nav.style.backgroundColor = "#bda13d";
+        } else {
+          nav.style.backgroundColor = "";
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observerSectionHero.observe(sectionhero);
   }
 });
 

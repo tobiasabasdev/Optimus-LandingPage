@@ -220,7 +220,6 @@ nav ul li a:after {
 
 .header-section hr{
     width: 30px;
-    margin: 0;
     border: white 1px solid;
 }
 
@@ -567,6 +566,11 @@ footer ul li{
 color: #bda13d;
 }
 
+footer ul li a {
+  color: #bda13d;
+  text-decoration: none;
+}
+
 
 footer p {
   text-align: center;
@@ -690,3 +694,4 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
